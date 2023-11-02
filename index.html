@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+    <link rel="stylesheet" href="./lib/jquery.fullpage.css">
+    <link rel="stylesheet" href="./css/mian.css">
+    <script src="./lib/jquery-1.11.2.min.js"></script>
+    <script src="./lib/jquery-ui.min.js"></script>
+    <script src="./lib/jquery.fullpage.js"></script>
+    <script>
+        $(function() {
+            console.log('start')
+            $('#fullpage').fullpage({
+                'navigation':true,
+				'navigationPosition' : 'right',
+                'navigationTooltips' : ['about','intro','hello','world'], 
+                'sectionsColor' : ['#000','','','','#158354','','','','','']
+                // 'afterLoad' :,
+                /*
+                'onLeave': function(index, nextIndex, direction){
+					if (index == 1 && direction == 'down'){ 
+                        $('.lion').addClass('on')  
+					} else if(index == 2) {
+                        $('.lion').removeClass('on');
+                        $('.ask-icon').removeClass('on')
+                    }
+					else if(index == 2 && direction == 'down' || index == 4 && direction == 'up'){
+						 
+                        $('.ask-icon').addClass('on')
+					} else if(index == 3) {
+                        $('.ask-icon').removeClass('on')
+                    }
+
+                    // 죽음두려움 극복
+                    else if(index == 3 && direction == 'down' || index == 5 && direction == 'up'){
+						 
+                         $('.ask-icon').addClass('on')
+                     } else if(index == 4) {
+                         $('.ask-icon').removeClass('on')
+                     }
+                },
+                */
+ 
+            });
+            console.log('end')
+        })
+
+        
+    </script>
+</head>
+<body>
+    <div id="fullpage"> 
+    <section class="section start-page">
+        
+        <div class="wrap-bg">
+
+            <!-- bg -->
+            <!-- <img src="./img/bg-sun.png" alt="" class="sun"> -->
+            <img src="./img/bg-rightGround.svg" alt="" class="ground">
+            <img src="./img/rip2.png" alt="" class="rip">
+            <img src="./img/bg-rightGress.svg" alt="" class="right-gress">
+            <img src="./img/bg-leafLT.svg" alt="" class="leafLT">
+            <img src="./img/bg-bottomGress.svg" alt="" class="bottom-gress">
+
+
+            <!-- tree -->
+            <img src="./img/treeRT.svg" alt="" class="treeRT">
+            <img src="./img/treeLT.svg" alt="" class="treeLT">
+            <img src="./img/treeLB.svg" alt="" class="treeLB">
+            <img src="./img/treeRB.svg" alt="" class="treeRB">
+            
+        </div>  
+        
+    </section>
+    
+<!-- 잘살다 갑니다 -->
+    <section class="section intro"> 
+        <div class="wrap base">
+            <div class="intro-title section-title">
+                <h2>
+                    덕분에 잘 살다가 갑니다!
+                </h2>
+                <h2 id="scroll-text">
+                    후회 없이
+                </h2>
+            </div>
+
+            <div class="lion-box">
+                <img src="./img/intro-js.png" alt="저승이"
+                class="js-phone01 lion" id="scroll-triggered-image">
+    
+                <img src="./img/phone-home.png" alt="목업 홈" class="phone-home">
+            </div>
+        </div>
+    </section>
+
+    <!-- 인생의 미련과 후회 -->
+    <section class="section ask">
+        <div class="inner base section-title">
+            <h2>인생의 미련과 후회를</h2>
+            <h2>덜어보세요</h2>
+        </div>
+
+        <div class="ask-icon base">
+            <img src="./img/apple.svg" alt="" class="apple1">
+            <img src="./img/leavs.svg" alt="" class="apple2">
+            <img src="./img/apple.svg" alt="" class="apple3">
+            <img src="./img/cross.svg" alt="" class="cross1">
+            <img src="./img/apple.svg" alt="" class="apple4">
+            <img src="./img/apple.svg" alt="" class="apple5">
+            <img src="./img/leavs.svg" alt="" class="cross2">
+            <img src="./img/cross.svg" alt="" class="apple6">
+        </div>
+    </section>
+<!-- 죽음에 대한 두려움 -->
+    <section class="section question">
+        <div class="inner base">
+            <div class="question-info">
+                <h3 class="main-title section-title">죽음에 대한 두려움, 극복할 수 있을까요?</h3>
+                
+                <p class="mid-title">
+                    죽음에 대한 두려움은 <br>
+                    회피만 해서는 이겨낼 수 없습니다.
+                </p>
+
+                <p>
+                    죽음은 우리에게 반드시 찾아오는 순간입니다. 그러기에<br>
+                    죽음의 순리를 받아들이고 조금씩 준비해 나가는 것이 중요합니다.
+                </p>
+            </div>
+
+            <div class="qusestion-img">
+                <img src="./img/js-fear.svg" alt="">
+                
+            </div>
+        </div>
+    </section>
+<!-- 페르소나 -->
+    <section class="section persona">
+
+        <div class="inner base">
+            <div class="title-wrap section-title">
+                <h3><strong>죽음</strong>에 대한 다양한 고민들</h3>
+                <h3 class="mid-title">어떻게 하면 좋을까요?</h3>
+            </div>
+
+            <div class="bubble">
+                <div class="bubble-1">
+                    <div class="triangle-1"></div>
+                    <p>
+                        흉흉한 소식들이 무서워요
+                    </p>
+                </div>
+                <div class="bubble-2">
+                    <div class="triangle-2"></div>
+                    <p>인생에 대해 회의감이
+                        느껴져요</p>
+                </div>
+                <div class="bubble-3">
+                    <div class="triangle-3"></div>
+                    <p>삶을 마무리 한다는 
+                        것은 무엇 인가요?</p>
+                </div>
+            </div>
+
+            <div class="character">
+                <div class="dog">
+                    <div class="dog-shadow"></div>
+                    <img src="./img/persona-dog.svg" alt="">
+                </div>
+
+                <div class="cat">
+                    <img src="./img/persona-cat.svg" alt="">
+                    <div class="dog-shadow"></div>
+                </div>
+
+                <div class="bear">
+                    <img src="./img/persona-bear.svg" alt="">
+                    <div class="dog-shadow"></div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+
+    </section>
+
+<!-- 문제해결 -->
+    <section class="section solution base">
+        <div class="solution-wrap">
+            <div class="solution-title section-title">
+                <h3>마인드 케어 다이어리 서비스</h3>
+                <h3>사과나무</h3>
+                <p>
+                    사과나무는 다이어리를 기반으로 웰다잉을 도와주
+                    <br>
+                    마인드케어 서비스 입니다. 
+                </p>
+            </div>
+
+            <div class="solution-circle">
+                <div class="circle-1">
+                    <p>유서 작성</p>
+                    <p>
+                        지나온 날들을 정리하고 유서를 일기쓰듯 만든 <br>
+                        따뜻한 다이어리 기능입니다.
+                    </p>
+                </div>
+                <div class="circle-2">
+                    <p>버킷리스트</p>
+                    <p>
+                        목표하는 활동들을 리스트로 정리하고 완료된 활동에는
+                        <br>
+                        체크박스에 체크하여 분류합니다.  
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+<!-- 컬러 -->
+    <section class="section color">
+        <div class="wrap-green">
+            <div class="#0E4600"></div>
+            <div class="#A2D949"></div>
+            <div class="#E3ED8D"></div>
+        </div>
+
+        <div class="wrap-yellow">
+            <div class="#FFBC13"></div>
+            <div class="#FEC870"></div>
+        </div>
+    </section>
+<!-- 유서 작성하기 -->
+    <section class="section note">
+        <div class="inner base">
+            <div class="note-info">
+                <h3>나의 하루 유서 작성하기</h3>
+                    <ul class="hashtag-note">
+                        <li>#하루하루를 소중해하기</li>
+                        <li>#미련과 후회는 덜어내기</li>
+                        <li>#나를 되돌아보기</li>
+                    </ul>
+                <p>
+                    앱에서 제공되는 다양한 템플릿들을 통해 나에 대한 여러 이야기를 남겨보세요.
+                    <br>
+                    테마별로 그동안 작성해온 유서들도 모아볼 수 있습니다.
+                </p>
+            </div>
+            
+            <div class="note-phone">
+                <img src="./img/note-phone1.svg" alt="">
+                <img src="./img/note-phone2.svg" alt="" class="note-phone2">
+                <img src="./img/note-phone3.svg" alt="">
+            </div>
+
+            
+        </div>
+        <div class="note-bg-end">
+            <img src="./img/note-bg.svg" alt="">
+        </div>
+    </section>
+
+    <section class="section goal">
+        <div class="inner base">
+            <div class="goal-info">
+                <h3>삶의 목표를 정해요</h3>
+                
+                <ul class="hashtag-goal">
+                    <li>#버킷리스트</li>
+                    <li>#목표 설정</li>
+                    <li>#달성해 나아가는 재미</li>
+                </ul>
+
+                <p class="first-line-p">
+                    이루고 싶은 일들을 버킷리스트에 작성하고 하나씩 달성해보세요.
+                </p>
+                <p class="second-line-p">
+                    각목표의 특징에 따라서 AI가 계획을 짜면 이를 캘린더에서 확인합니다.
+                </p>
+            </div>
+
+            <div class="goal-phone">
+                <img src="./img/phone-goal3.svg" alt="">
+                <img src="./img/phone-goal2.svg" alt="" class="phone-goal2">
+                <img src="./img/phone-goal1.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section learn">
+        <div class="inner base">
+            <div class="learn-info">
+                <h3>웰다잉 배우기</h3>
+                    <ul class="hashtag-learn">
+                        <li>#강의</li>
+                        <li>#웰다잉에 대한 탐구</li>
+                        <li>#알면 알수록 안심</li>
+                    </ul>
+                <p>
+                    앱에서 제공하는 다양한 주제의 강의들을 시청하고 죽음에
+                    대한
+                    <br>
+                    나의 고민, 웰다잉을 위해 나에게 필요한 것이 무엇인지
+                    <br>
+                    알아갈 수 있습니다.
+                </p>
+            </div>
+            
+            <div class="learn-phone">
+                <div class="circle"></div>
+                <img src="./img/learn-phone2.svg" alt="" class="learn-phone2">
+                <img src="./img/learn-phone1.svg" alt="" class="learn-phone1">
+                <img src="./img/js-learn.svg" alt="" class="learn-js">
+            </div>
+        </div>
+    </section>
+    <footer class="fp-auto-height">
+        copyright
+    </footer>
+    </div>
+    <script src="./js/intro.js"></script>
+    <script src="./js/js-popup.js"></script>
+</body>
+</html>
