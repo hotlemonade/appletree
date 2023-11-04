@@ -67,8 +67,15 @@ h3{
         height: 100vh;
         // border: 5px solid red;
         overflow: hidden;
+        
 
         // bg
+        .sun{
+            position: absolute;
+            right: 0;
+
+        }
+
         .ground{
             position: absolute;
             bottom: 0;
@@ -122,6 +129,12 @@ h3{
             right: 0;
         }
 
+        .js-move{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
 
         }
     
@@ -141,9 +154,9 @@ h3{
     .wrap{
         position: relative;
         .intro-title{
-            // outline: 1px solid red;
+            outline: 1px solid red;
             text-align: center;
-            // margin-top: 400px;
+            margin-top: -150px;
 
             #scroll-text{
                 opacity: 0;
@@ -162,6 +175,7 @@ h3{
             outline:1px solid red;
             margin:0 auto;
             width:180px;
+            top: 100px;
 
             .lion {
                 position:absolute;
@@ -206,9 +220,10 @@ h3{
 // 인생의 미련과 후회
 .ask{
     height: 100vh;
-    padding:50px 0;
+    // padding:50px 0;
     background-color: #E6FFD2;
     position: relative;
+    overflow: hidden;
 
     &.active .ask-icon {
         img {
@@ -219,12 +234,20 @@ h3{
     }
 
     .inner{
+        outline: 1px solid red;
         text-align:center;
+        
+        // margin-top: 300px;
+        
         // position: absolute;
         // left: 50%;
         // top: 50%;
         // transform: translate(-50%, -50%);
         // text-align: center;
+    }
+
+    h2{
+        margin: auto;
     }
 
     @keyframes fadeIn {
@@ -301,6 +324,7 @@ h3{
 
             .main-title{
                 font-size: 44px;
+                font-weight: 300;
             }
 
             .mid-title{
@@ -326,11 +350,12 @@ h3{
     height: 100vh;
     // background-color: aliceblue;
     position: relative;
+    overflow: hidden;
 
     .title-wrap{
         // outline: 1px solid red;
         text-align: center;
-        position: relative;
+        margin-top: -350px;
         
         h3{
             font-size: 50px;
@@ -339,7 +364,7 @@ h3{
         .mid-title{
             font-size: 40px;
             font-weight: 300;
-            margin-bottom: 100px;
+            margin-bottom: 40px;
         }
 
     }
@@ -348,19 +373,19 @@ h3{
         // outline: 1px solid blue;
         display: flex;
         justify-content: space-around;     
-        height: 250px;   
+        height: 200px;   
         .bubble-1{
             position: relative;
             height: 150px;
             width: 400px;
-            top: 50px;
             background-color: #DCECFF;
             border-radius: 20px;
 
             p{
                 text-align: center;
                 width: 350px;
-                font-size: 20px;
+                font-size: 30px;
+                font-weight: 200;
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -385,14 +410,14 @@ h3{
             position: relative;
             height: 150px;
             width: 400px;
-            top: 50px;
             background-color: #FFE6E6;
             border-radius: 20px;
 
             p{
                 text-align: center;
                 width: 350px;
-                font-size: 20px;
+                font-size: 30px;
+                font-weight: 200;
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -416,14 +441,14 @@ h3{
             position: relative;
             height: 150px;
             width: 400px;
-            top: 50px;
             background-color: #DDFFD8;
             border-radius: 20px;
 
             p{
                 text-align: center;
                 width: 350px;
-                font-size: 20px;
+                font-size: 25px;
+                font-weight: 200;
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -445,7 +470,7 @@ h3{
         }
     }
 
-    .character{
+    .persona-character{
         // outline: 1px solid green;
         position: relative;
         
@@ -514,16 +539,17 @@ h3{
             display: flex;
             .circle-1{
                 border: 10px solid #F6CBF2;
-                height: 500px;
-                width: 500px;
+                height: 350px;
+                width: 350px;
                 border-radius: 50%;
                 position: absolute;
-                right: 20%;
-                top: 21%;
+                right: 28%;
+                top: 24%;
                 
 
                 p{
                     position: absolute;
+                    font-size: 35px;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
@@ -531,7 +557,7 @@ h3{
 
                 p:nth-of-type(2){
                     position: absolute;
-                    top: 330px;
+                    top: 280px;
                     width: 300px;
                     text-align: center;
                     font-size: 12px;
@@ -547,20 +573,29 @@ h3{
                 // position: absolute;
                 // right: 0;
 
+                // position: absolute;
+                // right: 0;
+                // top: 21%;
+                // width: 500px;
+                // height: 500px;
+                // border: 10px solid transparent;
+                // border-radius: 50%;
+                // background-image: linear-gradient(#fff, #fff), 
+                // linear-gradient(to right, red 0%,  orange 100%);
+                // background-origin: border-box;
+                // background-clip: content-box, border-box;
+
+                border: 10px solid #F6CBF2;
+                height: 350px;
+                width: 350px;
+                border-radius: 50%;
                 position: absolute;
                 right: 0;
-                top: 21%;
-                width: 500px;
-                height: 500px;
-                border: 10px solid transparent;
-                border-radius: 50%;
-                background-image: linear-gradient(#fff, #fff), 
-                linear-gradient(to right, red 0%,  orange 100%);
-                background-origin: border-box;
-                background-clip: content-box, border-box;
+                top: 24%;
 
                 p{
                     position: absolute;
+                    font-size: 35px;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
@@ -568,7 +603,7 @@ h3{
 
                 p:nth-of-type(2){
                     position: absolute;
-                    top: 330px;
+                    top: 280px;
                     width: 300px;
                     text-align: center;
                     font-size: 12px;
@@ -582,24 +617,288 @@ h3{
 
 .color{
     outline: 1px solid;
-    height: 600px;
+    height: 100vh;
+    overflow: hidden;
+
+    p{
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .wrap-green{
+        outline: 1px solid red;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        
+        li:nth-of-type(1){
+            background-color: #0E4600;
+            flex-grow: 3.5;
+            position: relative;
+
+            p{
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+        }
+
+        li:nth-of-type(2){
+            background-color: #A2D949;
+            flex-grow: 5;
+            position: relative;
+
+            p{
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        li:nth-of-type(3){
+            background-color: #E3ED8D;
+            flex-grow: 3;
+            position: relative;
+
+            p{
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        
+    }
+
+    .wrap-yellow{
+        outline: 1px solid blue;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        li:nth-of-type(1){
+            position: relative;
+            background-color: #FFBC13;
+            flex-grow: 4;
+
+            p{
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        li:nth-of-type(2){
+            position: relative;
+            background-color: #FEC870;
+            flex-grow: 2;
+
+            p{
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    }
 }
 
+// 저승이 설명
+.character{
+    background-color: #8CF9C5;
+    overflow: hidden;
+    height: 100vh;
+
+    .wrap{
+        display: flex;
+        justify-content: space-between;
+
+        .js-img{
+            outline: 1px solid red;
+        }
+
+        .character-info{
+            outline: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+
+
+
+            .flex-box{
+                outline: 1px solid green;
+                height: 100px;
+                
+            }
+        }
+    }
+}
+
+// 타이포그래피
+.typography{
+    height: 100vh;
+    overflow: hidden;
+
+    .line{
+        border: 1px solid #C3C3C3;
+
+    }
+
+    .typography-title{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .pretendard{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        // outline: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        
+
+        .pretendard-left{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 0.4;
+            row-gap: 20px;
+            width: 500px;
+
+            .title-font{
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 200;
+                color: #403A3A;
+            }
+        }
+
+        .pretendard-right{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            row-gap: 20px;
+            
+
+            .title-font-fake{
+                font-size: 15px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            .font-well{
+                font-size: 70px;
+                font-weight: 400;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 200;
+                color: #403A3A;
+            }
+        }
+    }
+
+    .NotoSansKR{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        // outline: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+
+        .NotoSansKR-left{
+            display: flex;
+            flex-grow: 0.4;
+            flex-direction: column;
+            row-gap: 20px;
+            width: 500px;
+            
+
+            .title-font{
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 200;
+                color: #403A3A;
+            }
+        }
+
+        .NotoSansKR-right{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .title-font-fake{
+                font-size: 15px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            .font-well{
+                font-size: 70px;
+                font-weight: 400;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 200;
+                color: #403A3A;
+                
+                
+            }
+        }
+    }
+    
+
+
+}
+
+// 오후
+.afternoon{
+    background-image: url(../img/bg-afternoon.png);
+    background-position: center center;
+    background-size: cover;
+    
+}
+// 목업
+.mockup{
+    height: 100vh;
+    background-color: #FFF27E;
+}
+
+// 하루 유서 작성하기
 .note{
     height: 100vh;
-    background-color: #F0FFD7;
+    
     position: relative;
     
     
     .inner{
         // outline: 1px solid red;
         position: relative;
-        top: 43%;
         display: flex;
+        justify-content: space-between;
         z-index: 5;
+        outline: 1px solid red;
 
         .note-info{
+            // margin-top: 150px;
+            outline: 1px solid blue;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             
+            
+
             .hashtag-note{
                    
                 font-weight: 600;
@@ -620,14 +919,25 @@ h3{
         }
 
         .note-phone{
+            outline: 1px solid red;
+            height: 00px;
             display: flex;
+            justify-content: flex-end;
+            column-gap: 20px;
             position: absolute;
-            right: -400px;
-            top: -380px;
+            top: calc(50% - 350px);
+            right: -300px;
+
+            img{
+                height: 700px;
+            }
 
             .note-phone2{
-                margin-top: 140px;
+                outline: 1px solid blue;
+                top: 200px;
+                height: 700px;
             }
+
         }
 
         
@@ -643,12 +953,54 @@ h3{
     }
 }
 
+// 템플릿과 다양한 아이템
+.write{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #FFF27E;
+
+    .wrap{
+        .rightTop-text{
+            position: absolute;
+            top: 60px;
+            left: 170px;
+        }
+
+        .leftBottom-text{
+            position: absolute;
+            bottom: 60px;
+            right: 170px;
+            text-align: right;
+        }
+
+
+
+        .phone-wrap{
+            ul{
+                outline: 1px solid red;
+                display: flex;
+                justify-content: center;
+                height: 500px;
+                column-gap: 40px;
+
+                li{
+                    img{
+                        height: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 삶의 목표 정해요
 .goal{
     height: 100vh;
+    overflow: hidden;
     .inner{
-        // outline: 1px solid red;
+        outline: 1px solid red;
         position: relative;
-        top: 40%;
         z-index: 5;
         // display: flex;
         // justify-content: space-between;
@@ -660,9 +1012,10 @@ h3{
             }
 
             ul{
+                
                 font-weight: 600;
                 font-size: 17px;
-                margin-top: 14px;
+                margin-top: 19px;
                 display: flex;
                 column-gap: 20px;
                 color: #008315;               
@@ -670,6 +1023,7 @@ h3{
             }
 
             .first-line-p{
+                
                 margin-top: 60px;
                 font-size: 16px;
                 color: #7D7D7D;
@@ -678,6 +1032,7 @@ h3{
                 justify-content: flex-end;
             }
             .second-line-p{
+                
                 font-size: 16px;
                 color: #7D7D7D;
                 line-height: 25px;
@@ -689,22 +1044,24 @@ h3{
         .goal-phone{
             display: flex;
             position: absolute;
+            column-gap: 30px;
             top: -300px;
-            left: -300px;
 
-            .phone-goal2{
-                margin-top: 120px;
+            img{
+                height: 700px;
             }
         }
     }
 }
 
+// 웰다잉 배우기
 .learn{
     height: 100vh;
+    outline: hidden;
     .inner{
         // outline: 1px solid red;
         position: relative;
-        top: 40%;
+        display: flex;
 
         ul{
             font-weight: 600;
@@ -727,39 +1084,13 @@ h3{
 
         .learn-phone{
             
-            .circle{
-                position: absolute;
-                height: 750px;
-                width: 750px;
-                border-radius: 50%;
-                background-color: #EDFFCF;
-                right: 10%;
-                top: -150%;
+            position: absolute;
+            right: 0;
+            top: -200px;
+            
+            img{
+                height: 700px;
             }
-
-            .learn-phone2{
-                position: absolute;
-                left: 50%;
-                
-            }
-
-            .learn-phone1{
-                position: absolute;
-                left: 50%;
-                top: -270px;
-            }
-
-            .learn-phone2{
-                position: absolute;
-                left: 70%;
-                top: -220px;
-            }
-
-            .learn-js{
-                position: absolute;
-                left: 37%;
-            }
-
 
         }
         
@@ -768,6 +1099,49 @@ h3{
     }
 }
 
+// 목업 여러폰
+.mockup-all{
+    overflow: hidden;
+    background-color: #A6F6BC;
+    background-image: url(../img/mockup-all.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.night-bg{
+    background-image: url(../img/bg-night.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+// 팀원설명
+.team{
+    background-color: #000;
+    .wrap{
+        h2{
+            color: #fff;
+            text-align: center;
+        }
+
+        .line{
+            border-bottom: #fff;
+            width: 100%;
+        }
+
+        .team-wrap{
+            ul{
+                display: flex;
+                justify-content: space-between;
+
+                li{
+                    
+                    
+                }
+            }
+        }
+    }
+}
 
 // PLUGIN CSS EDIT
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
