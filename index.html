@@ -7,16 +7,19 @@
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
     <link rel="stylesheet" href="./lib/jquery.fullpage.css">
     <link rel="stylesheet" href="./css/mian.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <script src="./lib/jquery-1.11.2.min.js"></script>
     <script src="./lib/jquery-ui.min.js"></script>
     <script src="./lib/jquery.fullpage.js"></script>
+    <script src="./lib/slick/slick.min.js"></script>
+    <script src="./js/particle.js"></script>
     <script>
         $(function() {
-            console.log('start')
+            
             $('#fullpage').fullpage({
                 'navigation':true,
 				'navigationPosition' : 'right',
-                'navigationTooltips' : ['about','intro','hello','world'], 
+                'navigationTooltips' : ['welcome','intro1','intro2','intro3','persona','solution','color','character','Typography','about us','video','app intro','app info','app img','thank you','about team','quotation'], 
                 'sectionsColor' : ['','','','','','','','','','']
                 // 'afterLoad' :,
                 /*
@@ -45,7 +48,16 @@
                 */
  
             });
-            console.log('end')
+            $('.screenshots .my-slide').slick({
+                dots:true,
+                autoplay:false,
+                slideToShow :1,
+                slideToScroll : 1,
+                autoplaySpeed:3000,
+                arrows:true,
+                infinite:true
+            });
+ 
         })
 
         
@@ -64,7 +76,7 @@
             <img src="./img/bg-rightGress.svg" alt="" class="right-gress">
             <img src="./img/bg-leafLT.svg" alt="" class="leafLT">
             <img src="./img/bg-bottomGress.svg" alt="" class="bottom-gress">
-            <!-- <img src="./img/js-move.gif" alt="" class="js-move"> -->
+            <img src="./img/js-motion.gif" alt="" class="js-move section-title">
 
 
             <!-- tree -->
@@ -78,22 +90,20 @@
     </section>
     
 <!-- 잘살다 갑니다 -->
-    <section class="section intro"> 
+    <section class="section intro" id="particle-canvas"> 
         <div class="wrap base">
             <div class="intro-title section-title">
                 <h2>
                     덕분에 잘 살다가 갑니다!
-                </h2>
-                <h2>
-                    후회 없이
-                </h2>
+                    <strong>후회 없이</strong>
+                </h2> 
             </div>
 
             <div class="lion-box">
                 <img src="./img/intro-js.png" alt="저승이"
                 class="js-phone01 lion" id="scroll-triggered-image">
     
-                <img src="./img/phone-home.png" alt="목업 홈" class="phone-home">
+                <img src="./img/mockup-main.png" alt="목업 홈" class="phone-home">
             </div>
         </div>
     </section>
@@ -322,7 +332,7 @@
             <div class="NotoSansKR section-title">
 
                 <div class="NotoSansKR-left ">
-                    <p class="title-font ">본문폰트</p>
+                    <p class="title-font ">본문 폰트</p>
 
                     <h2>Noto Sans KR</h2>
 
@@ -358,45 +368,70 @@
 
 <!-- 오후 -->
     <section class="section afternoon">
-        <img src="./img/js-afternoon.png" alt="">
+        <div class="wrap base section-title">
+            <img src="./img/js-afternoon.png" alt="">
+
+            <p>서비스 소개</p>
+            <h2>
+                사과나무가
+                <br>
+                할 수 있는
+                <br>
+                일들
+            </h2>
+        </div>
+        
     </section>
+
+<section class="section video">
+    <iframe src="https://www.youtube.com/embed/ftN189Mj8FE?si=GYWJP29GtkIsgyNu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
 <!-- 목업 -->
     <section class="section mockup">
 
-        <div class=" wrap base section-title">
-            <img src="./img/mockup-app.png" alt="">
+        <div class=" wrap">
+            <img src="./img/mockup-three.png" alt="" class="mockup-three section-title">
+            <h2 class="mockup-title">나를심고 되새기다.</h2>
+            <img src="./img/appletree_icon_typo.png" alt="" class="logo">
         </div>
 
     </section>
-<!-- 유서 작성하기 -->
-    <section class="section note">
+<!-- 유서 작성하기 (앱설명) -->
+<section class="section screenshots" data-active="no">
+    <div class="my-slide"> 
+    <article class="note">
         <div class="inner base">
             <div class="note-info section-title">
                 <h3>나의 하루 유서 작성하기</h3>
-                    <ul class="hashtag-note">
-                        <li>#하루하루를 소중해하기</li>
-                        <li>#미련과 후회는 덜어내기</li>
-                        <li>#나를 되돌아보기</li>
-                    </ul>
+                <ul class="hashtag-note">
+                    <li>#하루하루를 소중해하기</li>
+                    <li>#미련과 후회는 덜어내기</li>
+                    <li>#나를 되돌아보기</li>
+                </ul>
                 <p>
                     앱에서 제공되는 다양한 템플릿들을 통해 나에 대한 여러 이야기를 남겨보세요.
                     <br>
                     테마별로 그동안 작성해온 유서들도 모아볼 수 있습니다.
                 </p>
+
             </div>
             
             <div class="note-phone">
                 <img src="./img/d-album.png" alt="">
-                <img src="./img/d-calander.png" alt="" class="note-phone2">
+                <img src="./img/d-calander.png" alt="">
                 <img src="./img/d-tema.png" alt="">
             </div>
 
+           
+
+            
+
             
         </div>
-    </section>
-<!-- 템플릿과 다양한 아이템 -->
-    <section class="section write">
-        <div class="wrap base ">
+    </article>
+    <article class="write">
+        <div class="wrap base">
             <h2 class="rightTop-text section-title">
                 템플릿과
                 <br>
@@ -426,9 +461,9 @@
                 </ul>
             </div>
         </div>
-    </section>
-<!-- 삶의 목표 정해요 -->
-    <section class="section goal">
+    </article>
+    <!-- 삶의 목표 정해요 -->
+    <article class="goal">
         <div class="inner base">
             <div class="goal-info section-title">
                 <h3>삶의 목표를 정해요</h3>
@@ -452,9 +487,9 @@
                 <img src="./img/buket-calander.png" alt="">
             </div>
         </div>
-    </section>
-<!-- 웰다잉 배우기 -->
-    <section class="section learn">
+    </article>
+    <!-- 웰다잉 배우기 -->
+    <article class="learn">
         <div class="inner base">
             <div class="learn-info section-title">
                 <h3>웰다잉 배우기</h3>
@@ -478,79 +513,142 @@
                 <img src="./img/class-detail.png" alt=" ">
             </div>
         </div>
-    </section>
+    </article>
+    </div>
+</section>
+    
+<!-- 템플릿과 다양한 아이템 -->
+   
+
+
 <!-- 목업 여러폰 -->
     <section class="section mockup-all">
         
     </section>
-
+<!-- 저녁 -->
     <section class="section night-bg">
-        <img src="./img/js-night.png" alt="">
+        <div class="wrap base section-title">
+            <img src="./img/js-night.png" alt="" class="js-night">
+
+            <p>Thank You</p>
+
+            <h2>
+                사과나무는
+                <br>
+                여러분의 편안한
+                <br>
+                마무리를 응원합니다
+            </h2>
+        </div>
+        
     </section>
 <!-- 팀원설명 -->
-    <section class="section team">
-        <div class="wrap base">
+    <section class="section team ">
+        <div class="wrap base section-title">
             <h2>남극탐험대</h2>
 
             <div class="line"></div>
 
-            <div class="team-wrap">
-                <ul>
-                    <li>
+            <div class="team-wrap ">
+                <div class="team-img">
+                    <div class="team">
                         <img src="./img/team-1.png" alt="">
-                        <ul>
-                            <li>Planner</li>
-                            <li>박민영</li>
-                            <li>aaaa@aaaa.com</li>
-                        </ul>
-                    </li>
+                        <p>Planner</p>
+                        <p>박민영</p>
+                        <p>coco3163@naver.com </p>
+                    </div>
 
-                    <li>
+                    <div class="team">
                         <img src="./img/team-2.png" alt="">
-                        <ul>
-                            <li>Planner</li>
-                            <li>박민영</li>
-                            <li>aaaa@aaaa.com</li>
-                        </ul>
-                    </li>
+                        <p>Designer</p>
+                        <p>배인영</p>
+                        <p>itank3@naver.com</p>
+                    </div>
 
-                    <li>
+                    <div class="team">
                         <img src="./img/team-3.png" alt="">
-                        <ul>
-                            <li>Planner</li>
-                            <li>박민영</li>
-                            <li>aaaa@aaaa.com</li>
-                        </ul>
-                    </li>
+                        <p>Designer (Leader)</p>
+                        <p>채예나</p>
+                        <p>Pendy052p@gmail.com</p>
+                    </div>
 
-                    <li>
+                    <div class="team">
                         <img src="./img/team-4.png" alt="">
-                        <ul>
-                            <li>Planner</li>
-                            <li>박민영</li>
-                            <li>aaaa@aaaa.com</li>
-                        </ul>
-                    </li>
+                        <p>Programmer</p>
+                        <p>최서영</p>
+                        <p>seoso0211@naver.com</p>
+                    </div>
 
-                    <li>
+                    <div class="team">
                         <img src="./img/team-5.png" alt="">
-                        <ul>
-                            <li>Planner</li>
-                            <li>박민영</li>
-                            <li>aaaa@aaaa.com</li>
-                        </ul>
-                    </li>
-                </ul>
+                        <p>Programmer</p>
+                        <p>도희승</p>
+                        <p>dohs0131@gmail.com</p>
+                    </div>
+                    
+                    
+                </div>
             </div>
+            <footer class="base">
+            
+                <div class="footer-logo">
+                    <img src="./img/footer-apple.png" alt="">
+                    <p>사과나무</p>
+                </div>
+                
+                
+                <p>나를 심고 되새기다</p>
+                <div class="felx-box"></div>
+                <p>ⓒ 2023 Team Antarctic Expedition all rights reserved </p>
+    
+            </footer>
+        </div>
+
+        
+    </section>
+
+    <section class="section quotation">
+        <div class="wrap base">
+            <p>이미지 출처</p>
+            <p>https://www.istockphoto.com/kr/%EB%B2%A1%ED%84%B0/%EB%8B%B9%ED%99%A9%ED%95%9C-%EC%83%9D%EA%B0%81%EC%9D%84-%EA%B0%80%EC%A7%84-%EC%9A%B0%EC%9A%B8%EC%A6%9D%EC%97%90-%EC%8B%9C%EB%8B%AC%EB%A6%B0-%EC%97%AC%EC%84%B1-%EC%B0%BD%EA%B0%80%EC%97%90-%EC%95%89%EC%95%84-%EB%AC%B4%EB%A6%8E%EC%9D%84-%EA%BB%B4%EC%95%88%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%96%B4%EB%A6%B0-%EC%8A%AC%ED%94%88-%EC%86%8C%EB%85%80-%ED%94%8C%EB%9E%AB-%EC%8A%A4%ED%83%80%EC%9D%BC-gm1324526451-409834098</p>
+            <p>https://storyset.com/illustration/questions/pana#599895FF&hide=&hide=complete</p>
+            <p>https://om_view=search&track=ais https://www.freepik.com/premium-psd/three-mobile-phones-isolated-white-mockup_36783604.htm#page=10&query=iphone%2014%20mockup&position=11&from_view=search&track=ais https://www.freepik.com/premium-psd/multi-screen-perspective-view-smartphome-mockup_5841457.htm</p>
+            <p> https://www.pinterest.co.kr/pin/983755112325864156/sent/?invite_code=fe73c2fa04894ea2995b5996b05715f7&sender=651403671011291233&sfo=1</p>
+            <p>https://www.pinterest.co.kr/pin/627478160592367604/sent/?invite_code=ad2814174a554adf9f44154a34057b3b&sender=651403671011291233&sfo=1</p>
+            <p>https://www.freepik.com/premium-vector/teenage-girl-writing-diary-journal_8076728.htm</p>
+            <p>https://www.freepik.com/free-vector/woman-holding-banners_5549545.htm#from_view=detail_alsolike</p>
+            <p>https://www.freepik.com/premium-vector/list-icon-cartoon-style-white-background_58651636.htm</p>
+            <p>https://stock.adobe.com/kr/images/young-couple-watch-tv-together-happy-man-and-woman-sitting-on-couch-and-watching-television-show-family-movie-night-lovers-character-home-relax-and-watch-video-vector-illustration/288297031</p>
+
+            <p>목업 원본</p>
+
+            <p>https://www.freepik.com/premium-psd/smartphone-mockup_26573 ㅍ 193.htm#page=9&query=iphone%2014%20mockup&position=40&from_view=search&track=ais</p>
+
+            <p>https://www.freepik.com/premium-psd/three-mobile-phones-isolated-white-mockup_36783604.htm#page=10&query=iphone%2014%20mockup&position=11&from_view=search&track=ais</p>
+
+            <p>https://www.freepik.com/premium-psd/multi-screen-perspective-view-smartphome-mockup_5841457.htm</p>
         </div>
     </section>
 
 
-    <footer class="fp-auto-height">
-        copyright
-    </footer>
+    
     </div>
     <script src="./js/intro.js"></script>
     <script src="./js/js-popup.js"></script>
+    <script>
+
+        /*
+        const note = document.querySelector('.note');
+        const title = note.querySelector('.section-title')
+        let notePos = note.offsetTop;
+ 
+        window.addEventListener('scroll',e=> {
+            let pos = window.scrollY;
+            if(pos > notePos) {
+                title.style.transform = `translateX(50px)`;
+            }
+        })
+        */
+    </script>
 </body>
 </html>

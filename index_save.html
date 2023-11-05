@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+    <link rel="stylesheet" href="./lib/jquery.fullpage.css">
+    <link rel="stylesheet" href="./css/mian.css">
+    <script src="./lib/jquery-1.11.2.min.js"></script>
+    <script src="./lib/jquery-ui.min.js"></script>
+    <script src="./lib/jquery.fullpage.js"></script>
+    <script>
+        $(function() {
+            console.log('start')
+            $('#fullpage').fullpage({
+                'navigation':true,
+				'navigationPosition' : 'right',
+                'navigationTooltips' : ['about','intro','hello','world'], 
+                'sectionsColor' : ['','','','','','','','','','']
+                // 'afterLoad' :,
+                /*
+                'onLeave': function(index, nextIndex, direction){
+					if (index == 1 && direction == 'down'){ 
+                        $('.lion').addClass('on')  
+					} else if(index == 2) {
+                        $('.lion').removeClass('on');
+                        $('.ask-icon').removeClass('on')
+                    }
+					else if(index == 2 && direction == 'down' || index == 4 && direction == 'up'){
+						 
+                        $('.ask-icon').addClass('on')
+					} else if(index == 3) {
+                        $('.ask-icon').removeClass('on')
+                    }
+
+                    // 죽음두려움 극복
+                    else if(index == 3 && direction == 'down' || index == 5 && direction == 'up'){
+						 
+                         $('.ask-icon').addClass('on')
+                     } else if(index == 4) {
+                         $('.ask-icon').removeClass('on')
+                     }
+                },
+                */
+ 
+            });
+            console.log('end')
+        })
+
+        
+    </script>
+</head>
+<body>
+    <div id="fullpage"> 
+    <section class="section start-page">
+        
+        <div class="wrap-bg">
+
+            <!-- bg -->
+            <img src="./img/sun.svg" alt="" class="sun">
+            <img src="./img/bg-rightGround.svg" alt="" class="ground">
+            <img src="./img/rip2.png" alt="" class="rip">
+            <img src="./img/bg-rightGress.svg" alt="" class="right-gress">
+            <img src="./img/bg-leafLT.svg" alt="" class="leafLT">
+            <img src="./img/bg-bottomGress.svg" alt="" class="bottom-gress">
+            <img src="./img/js-motion.gif" alt="" class="js-move">
+
+
+            <!-- tree -->
+            <img src="./img/treeRT.svg" alt="" class="treeRT">
+            <img src="./img/treeLT.svg" alt="" class="treeLT">
+            <img src="./img/treeLB.svg" alt="" class="treeLB">
+            <img src="./img/treeRB.svg" alt="" class="treeRB">
+            
+        </div>  
+        
+    </section>
+    
+<!-- 잘살다 갑니다 -->
+    <section class="section intro"> 
+        <div class="wrap base">
+            <div class="intro-title section-title">
+                <h2>
+                    덕분에 잘 살다가 갑니다!
+                </h2>
+                <h2>
+                    후회 없이
+                </h2>
+            </div>
+
+            <div class="lion-box">
+                <img src="./img/intro-js.png" alt="저승이"
+                class="js-phone01 lion" id="scroll-triggered-image">
+    
+                <img src="./img/phone-home.png" alt="목업 홈" class="phone-home">
+            </div>
+        </div>
+    </section>
+
+    <!-- 인생의 미련과 후회 -->
+    <section class="section ask">
+        <div class="inner base section-title">
+            <h2>인생의 미련과 후회를</h2>
+            <h2>덜어보세요</h2>
+        </div>
+
+        <div class="ask-icon base">
+            <img src="./img/apple.svg" alt="" class="apple1">
+            <img src="./img/leavs.svg" alt="" class="apple2">
+            <img src="./img/apple.svg" alt="" class="apple3">
+            <img src="./img/cross.svg" alt="" class="cross1">
+            <img src="./img/apple.svg" alt="" class="apple4">
+            <img src="./img/apple.svg" alt="" class="apple5">
+            <img src="./img/leavs.svg" alt="" class="cross2">
+            <img src="./img/cross.svg" alt="" class="apple6">
+        </div>
+    </section>
+<!-- 죽음에 대한 두려움 -->
+    <section class="section question">
+        <div class="inner base">
+            <div class="question-info">
+                <h3 class="main-title section-title">죽음에 대한 두려움, 극복할 수 있을까요?</h3>
+                
+                <p class="mid-title">
+                    죽음에 대한 두려움은 <br>
+                    회피만 해서는 이겨낼 수 없습니다.
+                </p>
+
+                <p>
+                    죽음은 우리에게 반드시 찾아오는 순간입니다. 그러기에<br>
+                    죽음의 순리를 받아들이고 조금씩 준비해 나가는 것이 중요합니다.
+                </p>
+            </div>
+
+            <div class="qusestion-img">
+                <img src="./img/js-fear.svg" alt="">
+                
+            </div>
+        </div>
+    </section>
+<!-- 페르소나 -->
+    <section class="section persona">
+
+        <div class="inner base">
+            <div class="title-wrap section-title">
+                <h3>죽음에 대한 다양한 고민들</h3>
+                <h3 class="mid-title">어떻게 하면 좋을까요?</h3>
+            </div>
+
+            <div class="bubble">
+                <div class="bubble-1">
+                    <div class="triangle-1"></div>
+                    <p>
+                        흉흉한 소식들이 무서워요
+                    </p>
+                </div>
+                <div class="bubble-2">
+                    <div class="triangle-2"></div>
+                    <p>인생에 대해 
+                        <br>
+                        회의감이 느껴져요</p>
+                </div>
+                <div class="bubble-3">
+                    <div class="triangle-3"></div>
+                    <p>삶을 마무리는 무엇 인가요?</p>
+                </div>
+            </div>
+
+            <div class="persona-character">
+                <div class="dog">
+                    <div class="dog-shadow"></div>
+                    <img src="./img/persona-dog.svg" alt="">
+                </div>
+
+                <div class="cat">
+                    <img src="./img/persona-cat.svg" alt="">
+                    <div class="dog-shadow"></div>
+                </div>
+
+                <div class="bear">
+                    <img src="./img/persona-bear.svg" alt="">
+                    <div class="dog-shadow"></div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+
+    </section>
+
+<!-- 문제해결 -->
+    <section class="section solution base">
+        <div class="solution-wrap">
+            <div class="solution-title section-title">
+                <h3>마인드 케어 다이어리 서비스</h3>
+                <h3>사과나무</h3>
+                <p>
+                    사과나무는 다이어리를 기반으로 웰다잉을 도와주
+                    <br>
+                    마인드케어 서비스 입니다. 
+                </p>
+            </div>
+
+            <div class="solution-circle">
+                <div class="circle-1">
+                    <p>유서 작성</p>
+                    <p>
+                        지나온 날들을 정리하고 유서를 일기쓰듯 만든 <br>
+                        따뜻한 다이어리 기능입니다.
+                    </p>
+                </div>
+                <div class="circle-2">
+                    <p>버킷리스트</p>
+                    <p>
+                        목표하는 활동들을 리스트로 정리하고 완료된 활동에는
+                        <br>
+                        체크박스에 체크하여 분류합니다.  
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+<!-- 컬러 -->
+    <section class="section color">
+        <ul class="wrap-green">
+            <li>
+                <p>
+                    #0E4600
+                </p>
+            </li>
+            <li>
+                <p>
+                    #A2D949
+                </p>
+            </li>
+            <li>
+                <p>
+                    #E3ED8D
+                </p>
+            </li>
+        </ul>
+
+        <ul class="wrap-yellow">
+            <li>
+                <p>#FFBC13</p>
+            </li>
+            <li>
+                <p>#FEC870</p>
+            </li>
+        </ul>
+    </section>
+
+<!-- 저승이 설명 -->
+    <section class="section character">
+        <div class="wrap base">
+            <div class="js-img">
+                <img src="./img/character-js.png" alt="">
+            </div>
+    
+            <div class="character-info">
+                <div class="text-info section-title">
+                    <h2>저승이</h2>
+                    
+                    <p>
+                    오지랖 넓은 유령이자 저승사자입니다. 사람의 영혼을 저승세계로<br>
+                    
+                    데려가야 하는 일을 제대로 하지 않고, 큰 사과나무 위에서 둥둥 떠다니며<br>
+                    인간들에게 더 좋은 삶을 살아갈 기회를 계속 주려고 합니다
+                    </p>
+                </div>
+                
+
+                <div class="flex-box"></div>
+                
+                <img src="./img/character-js-three.png" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+<!-- 타이포그래피 -->
+    <section class="section typography">
+        <div class="wrap base">
+            <p class="typography-title">Typography</p>
+
+            <div class="line"></div>
+            
+            <div class="pretendard section-title">
+                <div class="pretendard-left">
+                    <p class="title-font">제목 폰트</p>
+            
+                    <h2>Pretendard</h2>
+
+                    <p>
+                        abcdefghijklmnopqrstuvwxyz <br>
+                        ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                        가나다라마바사아자차카타파하
+                    </p>
+                </div>
+
+                <div class="pretendard-right">
+                    <p class="title-font-fake">제목 폰트</p>
+
+                    <p class="font-well">웰 다잉</p>
+
+                    <p>
+                        나를 심고, 되새기다.
+                        <br>
+                        웰 다잉 마인드 케어 서비스 ‘사과나무’
+                        <br>
+                        내일 인류가 멸망하더라도 나는 한 그루의 사과나무를 심겠다 -스피노자
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="NotoSansKR section-title">
+
+                <div class="NotoSansKR-left ">
+                    <p class="title-font ">본문 폰트</p>
+
+                    <h2>Noto Sans KR</h2>
+
+                    <p>
+                        abcdefghijklmnopqrstuvwxyz <br>
+                        ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                        가나다라마바사아자차카타파하
+                    </p>
+                </div>
+
+                <div class="NotoSansKR-right">
+                    <p class="title-font-fake">제목 폰트</p>
+
+                    <p class="font-well">웰 다잉</p>
+
+                    <p>
+                        나를 심고, 되새기다.
+                        <br>
+                        웰 다잉 마인드 케어 서비스 ‘사과나무’
+                        <br>
+                        내일 인류가 멸망하더라도 나는 한 그루의 사과나무를 심겠다 -스피노자
+                    </p>
+                </div>
+                
+
+            </div>
+                
+            
+        </div>
+        
+
+    </section>
+
+<!-- 오후 -->
+    <section class="section afternoon">
+        <img src="./img/js-afternoon.png" alt="">
+    </section>
+<!-- 목업 -->
+<section class="section video">
+
+</section>
+
+    <section class="section mockup">
+
+        <div class=" wrap base section-title">
+            <img src="./img/mockup-app.png" alt="">
+        </div>
+
+    </section>
+<!-- 유서 작성하기 -->
+<section class="section screenshots">
+    <article class="note">
+        <div class="inner base">
+            <div class="note-info section-title">
+                <h3>나의 하루 유서 작성하기</h3>
+                    <ul class="hashtag-note">
+                        <li>#하루하루를 소중해하기</li>
+                        <li>#미련과 후회는 덜어내기</li>
+                        <li>#나를 되돌아보기</li>
+                    </ul>
+                <p>
+                    앱에서 제공되는 다양한 템플릿들을 통해 나에 대한 여러 이야기를 남겨보세요.
+                    <br>
+                    테마별로 그동안 작성해온 유서들도 모아볼 수 있습니다.
+                </p>
+            </div>
+            
+            <div class="note-phone">
+                <img src="./img/d-album.png" alt="">
+                <img src="./img/d-calander.png" alt="" class="note-phone2">
+                <img src="./img/d-tema.png" alt="">
+            </div>
+
+            
+        </div>
+    </article>
+</section>
+    <section class="section note">
+        <div class="inner base">
+            <div class="note-info section-title">
+                <h3>나의 하루 유서 작성하기</h3>
+                    <ul class="hashtag-note">
+                        <li>#하루하루를 소중해하기</li>
+                        <li>#미련과 후회는 덜어내기</li>
+                        <li>#나를 되돌아보기</li>
+                    </ul>
+                <p>
+                    앱에서 제공되는 다양한 템플릿들을 통해 나에 대한 여러 이야기를 남겨보세요.
+                    <br>
+                    테마별로 그동안 작성해온 유서들도 모아볼 수 있습니다.
+                </p>
+            </div>
+            
+            <div class="note-phone">
+                <img src="./img/d-album.png" alt="">
+                <img src="./img/d-calander.png" alt="" class="note-phone2">
+                <img src="./img/d-tema.png" alt="">
+            </div>
+
+            
+        </div>
+    </section>
+<!-- 템플릿과 다양한 아이템 -->
+    <section class="section write">
+        <div class="wrap base ">
+            <h2 class="rightTop-text section-title">
+                템플릿과
+                <br>
+                다양한
+                <br>
+                아이템
+            </h2>
+
+            <h2 class="leftBottom-text section-title">
+                나의
+                <br>
+                오늘을
+                <br>
+                기록하다
+            </h2>
+            <div class="phone-wrap">
+                <ul>
+                    <li>
+                        <img src="./img/write-seleact.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/write-stk.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/write.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!-- 삶의 목표 정해요 -->
+    <section class="section goal">
+        <div class="inner base">
+            <div class="goal-info section-title">
+                <h3>삶의 목표를 정해요</h3>
+                
+                <ul class="hashtag-goal">
+                    <li>#버킷리스트</li>
+                    <li>#목표 설정</li>
+                    <li>#달성해 나아가는 재미</li>
+                </ul>
+
+                <p class="first-line-p">
+                    이루고 싶은 일들을 버킷리스트에 작성하고 하나씩 달성해보세요.
+                </p>
+                <p class="second-line-p">
+                    각목표의 특징에 따라서 AI가 계획을 짜면 이를 캘린더에서 확인합니다.
+                </p>
+            </div>
+
+            <div class="goal-phone">
+                <img src="./img/buket-main.png" alt="">
+                <img src="./img/buket-calander.png" alt="">
+            </div>
+        </div>
+    </section>
+<!-- 웰다잉 배우기 -->
+    <section class="section learn">
+        <div class="inner base">
+            <div class="learn-info section-title">
+                <h3>웰다잉 배우기</h3>
+                    <ul class="hashtag-learn">
+                        <li>#강의</li>
+                        <li>#웰다잉에 대한 탐구</li>
+                        <li>#알면 알수록 안심</li>
+                    </ul>
+                <p>
+                    앱에서 제공하는 다양한 주제의 강의들을 시청하고 죽음에
+                    대한
+                    <br>
+                    나의 고민, 웰다잉을 위해 나에게 필요한 것이 무엇인지
+                    <br>
+                    알아갈 수 있습니다.
+                </p>
+            </div>
+            
+            <div class="learn-phone">
+                <img src="./img/class-main.png" alt=" ">
+                <img src="./img/class-detail.png" alt=" ">
+            </div>
+        </div>
+    </section>
+<!-- 목업 여러폰 -->
+    <section class="section mockup-all">
+        
+    </section>
+
+    <section class="section night-bg">
+        <img src="./img/js-night.png" alt="">
+    </section>
+<!-- 팀원설명 -->
+    <section class="section team">
+        <div class="wrap base">
+            <h2>남극탐험대</h2>
+
+            <div class="line"></div>
+
+            <div class="team-wrap">
+                <div class="team-img">
+                    <img src="./img/team-1.png" alt="">
+                    <img src="./img/team-2.png" alt="">
+                    <img src="./img/team-3.png" alt="">
+                    <img src="./img/team-4.png" alt="">
+                    <img src="./img/team-5.png" alt="">
+                </div>
+
+                <ul>
+                    <li>
+                        <p>Planner</p>
+                        <p>박민영</p>
+                        <p>aaaa@aaaa.com</p>
+                    </li>
+
+                    <li>
+                        <p>Designer</p>
+                        <p>배인영</p>
+                        <p>aaaa@aaaa.com</p>
+                    </li>
+
+                    <li>
+                        <p>Designer (Leader)</p>
+                        <p>채예나</p>
+                        <p>Pendy052p@gmail.com</p>
+                    </li>
+
+                    <li>
+                        <p>Programmer</p>
+                        <p>최서영</p>
+                        <p>Pendy052p@gmail.com</p>
+                    </li>
+
+                    <li>
+                        <p>Programmer</p>
+                        <p>도희승</p>
+                        <p>dohs0131@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="fp-auto-height">
+        copyright
+    </footer>
+    </div>
+    <script src="./js/intro.js"></script>
+    <script src="./js/js-popup.js"></script>
+</body>
+</html>
