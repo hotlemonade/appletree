@@ -44,6 +44,7 @@ h3{
         opacity:1; transform:translateX(0)
     }
 }
+
 .section {
    
     &:not([data-active="no"]) {
@@ -74,6 +75,31 @@ h3{
         animation:moveLeft 1.5s both;
     }
 }
+
+// tree
+@keyframes treeMoveLeft {
+    0% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes treeMoveRight {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+
+}
+
 
 
 .start-page{
@@ -127,24 +153,29 @@ h3{
             position: absolute;
             top: 0;
             left: 0;
+            animation: treeMoveRight 2.5s ease-in-out forwards;
         }
 
         .treeRT{
             position: absolute;
             top: 0;
             right: 0;
+            animation: treeMoveLeft 2.5s ease-in-out forwards;
         }
 
         .treeLB{
             position: absolute;
             bottom: 0;
             left: 0;
+            animation: treeMoveRight 2.5s ease-in-out forwards;
         }
 
         .treeRB{
             position: absolute;
             bottom: 0;
             right: 0;
+            animation: treeMoveLeft 2.5s ease-in-out forwards;
+
         }
 
         .js-move{
@@ -153,6 +184,51 @@ h3{
             left: calc(50% - 400px);            
             height: 600px;
         }
+
+        .js-bubble-wrap{
+            position: relative;
+                height: 300px;
+                width: 500px;
+                top: 12%;
+                left: 20%;
+                z-index: 10;
+                
+            .js-bubble{
+                position: absolute;
+                height: 300px;
+                width: 500px;
+            }
+
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -60%);
+                font-size: 35px;
+                font-weight: 500;
+            }
+
+            .mouse{
+                position: absolute;
+                top: 65%;
+                left: 50%;
+                transform: translate(-50%, -60%);
+                height: 30px;
+            }
+
+            .scroll-down{
+                position: absolute;
+                top: 74%;
+                left: 50%;
+                transform: translate(-50%, -60%);
+                font-size: 14px;
+                color: #7D7D7D;
+                
+            }
+
+            
+        }
+        
 
     
         }
@@ -393,7 +469,7 @@ h3{
     .title-wrap{
         // outline: 1px solid red;
         text-align: center;
-        margin-top: -250px;
+        margin-top: -230px;
         
         h3{
             font-size: 44px;
@@ -405,7 +481,7 @@ h3{
         .mid-title{
             font-size: 40px;
             font-weight: 300;
-            margin-bottom: 40px;
+            margin-bottom: 70px;
             color: #000;
         }
 
@@ -450,6 +526,7 @@ h3{
 
         .bubble-2{
             position: relative;
+            top: -30px;
             height: 150px;
             width: 400px;
             background-color: #FFE6E6;
@@ -527,6 +604,7 @@ h3{
 
         .cat{
             position: absolute;
+            top: -30px;
             left: 50%;
             transform: translate(-40%,0);
             img{
