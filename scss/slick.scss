@@ -323,6 +323,7 @@ $main: 'black';
 
 .slick-prev {
     background-image: url($url + 'slide_arrow_prev.svg');
+    background-color: rgb(141, 141, 141);
     left: 50px;
     
 }
@@ -336,6 +337,7 @@ $main: 'black';
 .slick-next {
     background-image: url($url + 'slide_arrow_next.svg');
     right:50px;
+    background-color: rgb(141, 141, 141);
 }
 
 .slick-dots li {
@@ -344,16 +346,18 @@ $main: 'black';
             display: none;
         }
 
-      
+        margin-top: -60px;
         width:13px;height:13px;
         background-color:rgba(#fff,0.7);
-        border:1px solid rgba(255, 255, 255, 0.7);
+        border:1px solid rgba(119, 119, 119, 0.7);
+        border-radius: 50%;
     }
 
     &.slick-active {
         button {
             background-color: $main;
-            border-color: rgba(255, 255, 255, 1);
+            border-color: rgb(255, 104, 104);
+            background-color: rgb(255, 104, 104);
 
         }
     }

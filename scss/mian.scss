@@ -174,9 +174,11 @@ h3{
     .wrap{
         position: relative;
         .intro-title{
-            
             text-align: center;
             
+            img{
+                height: 100px;
+            }
 
             #scroll-text{
                 opacity: 0;
@@ -1360,6 +1362,7 @@ footer{
         }
     }
 }
+
 
 // PLUGIN CSS EDIT
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
